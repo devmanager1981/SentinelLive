@@ -57,8 +57,7 @@ Sentinel is a voice-first AI security analyst that:
 
 3. **Gemini Live Integration**
    - Real-time audio streaming (24kHz PCM)
-   - Barge-in support for interruptions
-   - Function calling for actions
+    - Function calling for actions
 
 4. **Google Cloud Firestore**
    - Stores security logs and incidents
@@ -157,16 +156,12 @@ python streamer.py
 - Detects brute force attacks (5+ failed logins in 10s)
 - Proactively alerts without user polling
 
-### 3. Barge-In Support
-- User can interrupt Gemini mid-sentence
-- Natural conversation flow
-- Context-aware responses
 
-### 4. Tool Calling
+### 3. Tool Calling
 - `get_incident_report`: Fetches active threats
 - `block_ip`: Neutralizes threats (simulated firewall action)
 
-### 5. Error Handling
+### 4. Error Handling
 - WebSocket keepalive (prevents timeout)
 - Incident deduplication (prevents duplicate alerts)
 - Graceful reconnection
@@ -187,12 +182,6 @@ python streamer.py
 - ✅ Tool calling for actions
 - ✅ WebSocket architecture for real-time audio
 
-### Demo & Presentation (30%)
-- ✅ Clear problem statement (SOC alert fatigue)
-- ✅ Compelling solution (autonomous voice AI)
-- ✅ Architecture diagram included
-- ✅ Live demo (not mockups)
-- ✅ Proof of Google Cloud deployment
 
 ## 📁 Project Structure
 
@@ -210,7 +199,6 @@ sentinel-live/
 ├── requirements.txt         # Python dependencies
 ├── .env.example             # Environment template
 ├── README.md                # This file
-└── HACKATHON_COMPLIANCE.md  # Compliance checklist
 ```
 
 ## 🚢 Deployment to Google Cloud
@@ -236,16 +224,6 @@ gcloud run deploy sentinel-frontend \
 ### Option 2: Manual Deployment
 
 See `DEPLOYMENT.md` for detailed instructions.
-
-## 🧪 Testing
-
-```bash
-# Test neutralize endpoint
-python test_neutralize.py
-
-# Clear Firestore data
-python clear_firestore.py
-```
 
 ## 🐛 Troubleshooting
 
@@ -277,10 +255,8 @@ MIT License - See LICENSE file for details
 
 ## 📧 Contact
 
-[Your Name/Team Name]
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-- Devpost: [Project Link]
+Sachin Gupta
+- GitHub: https://github.com/devmanager1981/SentinelLive
 
 ---
 

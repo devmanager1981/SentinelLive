@@ -56,3 +56,7 @@ UI_FIXES_SUMMARY.md
 hackrules.txt
 DEMO_QUICK_REFERENCE.MD
 DEMO_VIDEO_SCRIPT.MD
+BUG_CONDITION_EXPLORATION_RESULTS.md
+test_gemini_live_bridge_preservation.py
+test_gemini_live_bridge_bugfix.py
+HACKATHON_COMPLIANCE.md
