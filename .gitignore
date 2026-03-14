@@ -1,0 +1,58 @@
+# Environment & secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.kiro
+.kiro/
+.hypothesis
+.hypothesis/
+
+# Testing
+.pytest_cache/
+.hypothesis/
+
+# Logs
+*.log
+server.log
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Deploy staging (copied at deploy time)
+deploy/backend/requirements.txt
+deploy/backend/server/
+deploy/frontend/requirements.txt
+deploy/frontend/web/
+
+# Debug / scratch files
+debug_ws.py
+inspect_sdk_url.py
+list_live_models.py
+list_models.py
+models_list.txt
+server run.txt
+GeminiLiveidea.txt
+clear_firestore.py
+deploy.sh 
+FIXES_APPLIED.md 
+SUBMISSION_CHECKLIST.MD 
+test_firestore.py 
+test_neutralize.py
+UI_FIXES_SUMMARY.md
+hackrules.txt
+DEMO_QUICK_REFERENCE.MD
+DEMO_VIDEO_SCRIPT.MD

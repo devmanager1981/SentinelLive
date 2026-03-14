@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+google-cloud-firestore
+python-dotenv
+requests
+pydantic
+streamlit
+google-genai
+websockets
+streamlit-autorefresh
