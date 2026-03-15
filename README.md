@@ -14,7 +14,6 @@ Sentinel is a voice-first AI security analyst that:
 - **Monitors autonomously**: Watches for security incidents in real-time
 - **Alerts proactively**: Interrupts with urgent voice notifications when threats are detected
 - **Responds naturally**: Accepts voice commands like "neutralize it" to execute actions
-- **Handles interruptions**: Supports barge-in during conversations
 
 ## 🎥 Demo Video
 
@@ -127,7 +126,7 @@ python streamer.py
 2. **Connect to Gemini**: Click "Establish Neural Link" button
 3. **Start Attack Simulation**: Run `streamer.py` and press 'a' for attack mode
 4. **Listen for Alert**: Gemini will interrupt with voice alert when threat detected
-5. **Respond with Voice**: Say "neutralize it" or click the Neutralize button
+5. **Respond with Voice**: Click the Neutralize button
 6. **Watch Resolution**: Incident status updates to "Neutralized"
 
 ## 🔧 Technologies Used
@@ -171,7 +170,6 @@ python streamer.py
 ### Innovation & Multimodal UX (40%)
 - ✅ Breaks "text box" paradigm with voice-first interaction
 - ✅ Seamless audio experience (no turn-based delays)
-- ✅ Handles interruptions naturally
 - ✅ Distinct persona: "Sentinel" AI Security Analyst
 - ✅ Context-aware and proactive
 

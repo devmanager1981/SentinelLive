@@ -14,9 +14,17 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-PROJECT_ID = os.getenv("GOOGLE_PROJECT_ID", "glive-build")
-DATABASE_ID = os.getenv("GOOGLE_FIRESTORE_DB", "(default)")
-BACKEND_URL = os.getenv("BACKEND_URL", "https://sentinel-backend-6beoejihxa-uc.a.run.app")
+# Strip quotes that may come from .env values
+PROJECT_ID = os.getenv("GOOGLE_PROJECT_ID", "").strip().strip('"\'')
+DATABASE_ID = os.getenv("GOOGLE_FIRESTORE_DB", "").strip().strip('"\'')
+BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000").strip().strip('"\'')
+
+# Validate required config
+if not PROJECT_ID or not DATABASE_ID:
+    print("ERROR: GOOGLE_PROJECT_ID and GOOGLE_FIRESTORE_DB must be set in .env")
+    sys.exit(1)
+
+print(f"Config: PROJECT={PROJECT_ID}, DB={DATABASE_ID}, BACKEND={BACKEND_URL}")
 
 # Initialize Firestore
 db = firestore.Client(project=PROJECT_ID, database=DATABASE_ID)
